@@ -20,8 +20,8 @@ function renderCountryInfo(countries) {
             return `
         <ul class="country-info__list">
             <li class="country-info__item"><p><b>Capital: </b>${capital}</p></li>
-            <li class="country-info__item"><p><b>Population: </b>${population}</p></li>
             <li class="country-info__item"><p><b>Languages: </b>${Object.values(languages).join(', ')}</p></li>
+            <li class="country-info__item"><p><b>Population: </b>${population} of persons</p></li>
         </ul>
         `
         })
