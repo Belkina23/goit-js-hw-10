@@ -19,9 +19,9 @@ function renderCountryInfo(countries) {
         .map(({ capital, population, languages }) => {
             return `
         <ul class="country-info__list">
-            <li class="country-info__item"><p><b>Capital: </b>${capital}</p></li>
-            <li class="country-info__item"><p><b>Languages: </b>${Object.values(languages).join(', ')}</p></li>
-            <li class="country-info__item"><p><b>Population: </b>${population} of persons</p></li>
+            <li class="country-info__item"><b>Capital: </b>${capital}</li>
+            <li class="country-info__item"><b>Languages: </b>${Object.values(languages).join(', ')}</li>
+            <li class="country-info__item"><b>Population: </b>${population} of persons</li>
         </ul>
         `
         })
