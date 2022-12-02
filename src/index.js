@@ -18,7 +18,7 @@ refs.searchBox.addEventListener('input', debounce(inputCountry, DEBOUNCE_DELAY))
 function inputCountry() {
     const name = refs.searchBox.value.trim()
     if (name === '') {
-        return (countryList.innerHTML = ''), (countryInfo.innerHTML = '')
+        return (refs.countryList.innerHTML = ''), (refs.countryInfo.innerHTML = '')
     }
 
     fetchCountries(name)
